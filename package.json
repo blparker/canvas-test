@@ -6,8 +6,7 @@
     "scripts": {
         "dev": "vite",
         "build": "vue-tsc && vite build",
-        "preview": "vite preview",
-        "publish": "npm version patch && npm publish"
+        "preview": "vite preview"
     },
     "dependencies": {
         "mime": "^3.0.0",

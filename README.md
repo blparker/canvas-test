@@ -9,6 +9,7 @@ A utility for visually testing HTML canvas applications. Note, this is not inten
 2. Create a folder in the root of your workspace named `test-cases`.
 3. Create a class in `test-cases` that extends from `TestSuite` (see below).
 4. Start the UI: `canvas-test`.
+5. Visit the UI to see your test cases: http://localhost:8000/node_modules/@blparker/canvas-test/dist/index.html
 
 ## Writing a test suite
 
@@ -34,4 +35,14 @@ class MyTests extends TestSuite {
 
 Test cases get rendered in a UI which is served from the package directory, running on port `8000`:
 
+![UI](https://i.imgur.com/Q3sfz8x.png)
 
+### Controls
+
+There are three primary controls, displayed as buttons, to concern yourself with:
+
+1. "Play": pressing this causes a repaint. Useful when your canvas test involves an animation that you want to replay.
+2. "Capture": takes a "screenshot" of the canvas for a particular test and displays it on the right.
+3. "Capture Clip": records a video of the canvas for a particular test. This is useful if the canvas test involves animations. When done capturing, click the button again to end the capture. The resulting video will be displayed on the right.
+
+**Note**: All state changes and captures are persisted in local storage.
