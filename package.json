@@ -1,7 +1,7 @@
 {
-    "name": "canvas-test",
-    "private": true,
-    "version": "0.0.0",
+    "name": "@blparker/canvas-test",
+    "private": false,
+    "version": "1.0.0",
     "type": "module",
     "scripts": {
         "dev": "vite",
@@ -24,6 +24,6 @@
         "vue-tsc": "^1.8.5"
     },
     "bin": {
-        "canvas-test": "./index.js"
+        "canvas-test": "./canvas-test.js"
     }
 }

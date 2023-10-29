@@ -28,6 +28,9 @@ export class TestSuite {
     }
 }
 
+// @ts-ignore
+window.TestSuite = TestSuite;
+
 export const registeredSuites: TestSuite[] = [];
 
 export function registerTestSuite(suite: TestSuite) {
