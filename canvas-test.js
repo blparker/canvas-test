@@ -26,7 +26,7 @@ createServer(async (req, res) => {
 }).listen(config.port);
 
 console.log(`Reading test cases from ${config.testCaseDir}`);
-console.log(`Listening on port ${config.port}`);
+console.log(`Listening on port ${config.port}. canvas-test UI running at http://localhost:${config.port}/node_modules/@blparker/canvas-test/dist/index.html`);
 
 
 async function serveTestCases(req, res) {
