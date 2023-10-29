@@ -16,8 +16,7 @@ interface TestSuiteCtor {
 onMounted(async () => {
     const storedTests = Storage.getTestsByName();
     // @ts-ignore
-    const module = await import(`http://localhost:5173/test-cases`);
-    // const module = await import(`${window.location.origin}/test-cases`);
+    const module = await import(`${window.location.origin}/test-cases`);
 
     for (const suiteClass of Object.values(module) as TestSuiteCtor[]) {
         const suite = new suiteClass();
